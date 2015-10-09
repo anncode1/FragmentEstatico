@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FragmentEstatico</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="titulo">Activity</string>
+    <string name="texto_fragment">Soy un Fragment! :)</string>
+</resources>

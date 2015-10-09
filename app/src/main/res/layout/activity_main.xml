@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/azul"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_titulo"
+        android:text="@string/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blanco"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/abc_action_bar_default_height_material"/>
+
+    <fragment
+        android:id="@+id/frg_fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_titulo"
+        android:name="com.anahisalgado.fragmentestatico.MiFragment"
+        tools:layout="@layout/fragment_layout"
+        />
+
+    <fragment
+        android:id="@+id/frg_fragment2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.anahisalgado.fragmentestatico.MiFragment"
+        tools:layout="@layout/fragment_layout"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>
